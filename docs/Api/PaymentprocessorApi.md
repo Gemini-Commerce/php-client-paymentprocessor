@@ -1,4 +1,4 @@
-# GeminiCommerce\Paymentprocessor\PaymentprocessorApi
+# OpenAPI\Client\PaymentprocessorApi
 
 All URIs are relative to https://payment-processor.api.gogemini.io, except if the operation defines another base path.
 
@@ -23,7 +23,7 @@ All URIs are relative to https://payment-processor.api.gogemini.io, except if th
 ## `authorizePayment()`
 
 ```php
-authorizePayment($body): \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorAuthorizePaymentResponse
+authorizePayment($body): \OpenAPI\Client\Model\PaymentprocessorAuthorizePaymentResponse
 ```
 
 Authorize Payment
@@ -36,18 +36,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorAuthorizePaymentRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorAuthorizePaymentRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorAuthorizePaymentRequest(); // \OpenAPI\Client\Model\PaymentprocessorAuthorizePaymentRequest
 
 try {
     $result = $apiInstance->authorizePayment($body);
@@ -61,11 +61,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorAuthorizePaymentRequest**](../Model/PaymentprocessorAuthorizePaymentRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorAuthorizePaymentRequest**](../Model/PaymentprocessorAuthorizePaymentRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorAuthorizePaymentResponse**](../Model/PaymentprocessorAuthorizePaymentResponse.md)
+[**\OpenAPI\Client\Model\PaymentprocessorAuthorizePaymentResponse**](../Model/PaymentprocessorAuthorizePaymentResponse.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ try {
 ## `createPaymentMethod()`
 
 ```php
-createPaymentMethod($body): \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPaymentMethod
+createPaymentMethod($body): \OpenAPI\Client\Model\PaymentprocessorPaymentMethod
 ```
 
 Create Payment Method
@@ -96,18 +96,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorCreatePaymentMethodRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorCreatePaymentMethodRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorCreatePaymentMethodRequest(); // \OpenAPI\Client\Model\PaymentprocessorCreatePaymentMethodRequest
 
 try {
     $result = $apiInstance->createPaymentMethod($body);
@@ -121,11 +121,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorCreatePaymentMethodRequest**](../Model/PaymentprocessorCreatePaymentMethodRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorCreatePaymentMethodRequest**](../Model/PaymentprocessorCreatePaymentMethodRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPaymentMethod**](../Model/PaymentprocessorPaymentMethod.md)
+[**\OpenAPI\Client\Model\PaymentprocessorPaymentMethod**](../Model/PaymentprocessorPaymentMethod.md)
 
 ### Authorization
 
@@ -143,7 +143,7 @@ try {
 ## `finalizePayment()`
 
 ```php
-finalizePayment($body): \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorFinalizePaymentResponse
+finalizePayment($body): \OpenAPI\Client\Model\PaymentprocessorFinalizePaymentResponse
 ```
 
 Finalize Payment
@@ -156,18 +156,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorFinalizePaymentRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorFinalizePaymentRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorFinalizePaymentRequest(); // \OpenAPI\Client\Model\PaymentprocessorFinalizePaymentRequest
 
 try {
     $result = $apiInstance->finalizePayment($body);
@@ -181,11 +181,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorFinalizePaymentRequest**](../Model/PaymentprocessorFinalizePaymentRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorFinalizePaymentRequest**](../Model/PaymentprocessorFinalizePaymentRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorFinalizePaymentResponse**](../Model/PaymentprocessorFinalizePaymentResponse.md)
+[**\OpenAPI\Client\Model\PaymentprocessorFinalizePaymentResponse**](../Model/PaymentprocessorFinalizePaymentResponse.md)
 
 ### Authorization
 
@@ -203,7 +203,7 @@ try {
 ## `getAvailablePaymentMethod()`
 
 ```php
-getAvailablePaymentMethod($body): \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPaymentMethod
+getAvailablePaymentMethod($body): \OpenAPI\Client\Model\PaymentprocessorPaymentMethod
 ```
 
 Get Available Payment Method
@@ -216,18 +216,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorGetAvailablePaymentMethodRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorGetAvailablePaymentMethodRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorGetAvailablePaymentMethodRequest(); // \OpenAPI\Client\Model\PaymentprocessorGetAvailablePaymentMethodRequest
 
 try {
     $result = $apiInstance->getAvailablePaymentMethod($body);
@@ -241,11 +241,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorGetAvailablePaymentMethodRequest**](../Model/PaymentprocessorGetAvailablePaymentMethodRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorGetAvailablePaymentMethodRequest**](../Model/PaymentprocessorGetAvailablePaymentMethodRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPaymentMethod**](../Model/PaymentprocessorPaymentMethod.md)
+[**\OpenAPI\Client\Model\PaymentprocessorPaymentMethod**](../Model/PaymentprocessorPaymentMethod.md)
 
 ### Authorization
 
@@ -263,7 +263,7 @@ try {
 ## `getPaymentMethod()`
 
 ```php
-getPaymentMethod($body): \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPaymentMethod
+getPaymentMethod($body): \OpenAPI\Client\Model\PaymentprocessorPaymentMethod
 ```
 
 Get Payment Method
@@ -276,18 +276,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorGetPaymentMethodRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorGetPaymentMethodRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorGetPaymentMethodRequest(); // \OpenAPI\Client\Model\PaymentprocessorGetPaymentMethodRequest
 
 try {
     $result = $apiInstance->getPaymentMethod($body);
@@ -301,11 +301,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorGetPaymentMethodRequest**](../Model/PaymentprocessorGetPaymentMethodRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorGetPaymentMethodRequest**](../Model/PaymentprocessorGetPaymentMethodRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPaymentMethod**](../Model/PaymentprocessorPaymentMethod.md)
+[**\OpenAPI\Client\Model\PaymentprocessorPaymentMethod**](../Model/PaymentprocessorPaymentMethod.md)
 
 ### Authorization
 
@@ -323,7 +323,7 @@ try {
 ## `getPaymentMethodConfiguration()`
 
 ```php
-getPaymentMethodConfiguration($body): \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorGetPaymentMethodConfigurationResponse
+getPaymentMethodConfiguration($body): \OpenAPI\Client\Model\PaymentprocessorGetPaymentMethodConfigurationResponse
 ```
 
 Get Payment Method Configuration
@@ -336,18 +336,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorGetPaymentMethodConfigurationRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorGetPaymentMethodConfigurationRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorGetPaymentMethodConfigurationRequest(); // \OpenAPI\Client\Model\PaymentprocessorGetPaymentMethodConfigurationRequest
 
 try {
     $result = $apiInstance->getPaymentMethodConfiguration($body);
@@ -361,11 +361,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorGetPaymentMethodConfigurationRequest**](../Model/PaymentprocessorGetPaymentMethodConfigurationRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorGetPaymentMethodConfigurationRequest**](../Model/PaymentprocessorGetPaymentMethodConfigurationRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorGetPaymentMethodConfigurationResponse**](../Model/PaymentprocessorGetPaymentMethodConfigurationResponse.md)
+[**\OpenAPI\Client\Model\PaymentprocessorGetPaymentMethodConfigurationResponse**](../Model/PaymentprocessorGetPaymentMethodConfigurationResponse.md)
 
 ### Authorization
 
@@ -383,7 +383,7 @@ try {
 ## `initPayment()`
 
 ```php
-initPayment($body): \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorInitPaymentResponse
+initPayment($body): \OpenAPI\Client\Model\PaymentprocessorInitPaymentResponse
 ```
 
 Init Payment
@@ -396,18 +396,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorInitPaymentRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorInitPaymentRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorInitPaymentRequest(); // \OpenAPI\Client\Model\PaymentprocessorInitPaymentRequest
 
 try {
     $result = $apiInstance->initPayment($body);
@@ -421,11 +421,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorInitPaymentRequest**](../Model/PaymentprocessorInitPaymentRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorInitPaymentRequest**](../Model/PaymentprocessorInitPaymentRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorInitPaymentResponse**](../Model/PaymentprocessorInitPaymentResponse.md)
+[**\OpenAPI\Client\Model\PaymentprocessorInitPaymentResponse**](../Model/PaymentprocessorInitPaymentResponse.md)
 
 ### Authorization
 
@@ -443,7 +443,7 @@ try {
 ## `listAvailablePaymentMethods()`
 
 ```php
-listAvailablePaymentMethods($body): \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorListAvailablePaymentMethodsResponse
+listAvailablePaymentMethods($body): \OpenAPI\Client\Model\PaymentprocessorListAvailablePaymentMethodsResponse
 ```
 
 List Available Payment Methods
@@ -456,18 +456,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorListAvailablePaymentMethodsRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorListAvailablePaymentMethodsRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorListAvailablePaymentMethodsRequest(); // \OpenAPI\Client\Model\PaymentprocessorListAvailablePaymentMethodsRequest
 
 try {
     $result = $apiInstance->listAvailablePaymentMethods($body);
@@ -481,11 +481,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorListAvailablePaymentMethodsRequest**](../Model/PaymentprocessorListAvailablePaymentMethodsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorListAvailablePaymentMethodsRequest**](../Model/PaymentprocessorListAvailablePaymentMethodsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorListAvailablePaymentMethodsResponse**](../Model/PaymentprocessorListAvailablePaymentMethodsResponse.md)
+[**\OpenAPI\Client\Model\PaymentprocessorListAvailablePaymentMethodsResponse**](../Model/PaymentprocessorListAvailablePaymentMethodsResponse.md)
 
 ### Authorization
 
@@ -503,7 +503,7 @@ try {
 ## `listPaymentMethods()`
 
 ```php
-listPaymentMethods($body): \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorListPaymentMethodsResponse
+listPaymentMethods($body): \OpenAPI\Client\Model\PaymentprocessorListPaymentMethodsResponse
 ```
 
 List Payment Methods
@@ -516,18 +516,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorListPaymentMethodsRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorListPaymentMethodsRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorListPaymentMethodsRequest(); // \OpenAPI\Client\Model\PaymentprocessorListPaymentMethodsRequest
 
 try {
     $result = $apiInstance->listPaymentMethods($body);
@@ -541,11 +541,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorListPaymentMethodsRequest**](../Model/PaymentprocessorListPaymentMethodsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorListPaymentMethodsRequest**](../Model/PaymentprocessorListPaymentMethodsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorListPaymentMethodsResponse**](../Model/PaymentprocessorListPaymentMethodsResponse.md)
+[**\OpenAPI\Client\Model\PaymentprocessorListPaymentMethodsResponse**](../Model/PaymentprocessorListPaymentMethodsResponse.md)
 
 ### Authorization
 
@@ -563,7 +563,7 @@ try {
 ## `performPayment()`
 
 ```php
-performPayment($body): \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPerformPaymentResponse
+performPayment($body): \OpenAPI\Client\Model\PaymentprocessorPerformPaymentResponse
 ```
 
 Perform Payment
@@ -576,18 +576,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPerformPaymentRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPerformPaymentRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorPerformPaymentRequest(); // \OpenAPI\Client\Model\PaymentprocessorPerformPaymentRequest
 
 try {
     $result = $apiInstance->performPayment($body);
@@ -601,11 +601,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPerformPaymentRequest**](../Model/PaymentprocessorPerformPaymentRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorPerformPaymentRequest**](../Model/PaymentprocessorPerformPaymentRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPerformPaymentResponse**](../Model/PaymentprocessorPerformPaymentResponse.md)
+[**\OpenAPI\Client\Model\PaymentprocessorPerformPaymentResponse**](../Model/PaymentprocessorPerformPaymentResponse.md)
 
 ### Authorization
 
@@ -636,18 +636,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPerformRefundRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPerformRefundRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorPerformRefundRequest(); // \OpenAPI\Client\Model\PaymentprocessorPerformRefundRequest
 
 try {
     $result = $apiInstance->performRefund($body);
@@ -661,7 +661,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPerformRefundRequest**](../Model/PaymentprocessorPerformRefundRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorPerformRefundRequest**](../Model/PaymentprocessorPerformRefundRequest.md)|  | |
 
 ### Return type
 
@@ -696,18 +696,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorUpdatePaymentRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorUpdatePaymentRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorUpdatePaymentRequest(); // \OpenAPI\Client\Model\PaymentprocessorUpdatePaymentRequest
 
 try {
     $result = $apiInstance->updatePayment($body);
@@ -721,7 +721,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorUpdatePaymentRequest**](../Model/PaymentprocessorUpdatePaymentRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorUpdatePaymentRequest**](../Model/PaymentprocessorUpdatePaymentRequest.md)|  | |
 
 ### Return type
 
@@ -743,7 +743,7 @@ try {
 ## `updatePaymentMethod()`
 
 ```php
-updatePaymentMethod($body): \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPaymentMethod
+updatePaymentMethod($body): \OpenAPI\Client\Model\PaymentprocessorPaymentMethod
 ```
 
 Update Payment Method
@@ -756,18 +756,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorUpdatePaymentMethodRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorUpdatePaymentMethodRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorUpdatePaymentMethodRequest(); // \OpenAPI\Client\Model\PaymentprocessorUpdatePaymentMethodRequest
 
 try {
     $result = $apiInstance->updatePaymentMethod($body);
@@ -781,11 +781,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorUpdatePaymentMethodRequest**](../Model/PaymentprocessorUpdatePaymentMethodRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorUpdatePaymentMethodRequest**](../Model/PaymentprocessorUpdatePaymentMethodRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPaymentMethod**](../Model/PaymentprocessorPaymentMethod.md)
+[**\OpenAPI\Client\Model\PaymentprocessorPaymentMethod**](../Model/PaymentprocessorPaymentMethod.md)
 
 ### Authorization
 
@@ -803,7 +803,7 @@ try {
 ## `voidPayment()`
 
 ```php
-voidPayment($body): \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorVoidPaymentResponse
+voidPayment($body): \OpenAPI\Client\Model\PaymentprocessorVoidPaymentResponse
 ```
 
 Void Payment
@@ -816,18 +816,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Paymentprocessor\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Paymentprocessor\Api\PaymentprocessorApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentprocessorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorVoidPaymentRequest(); // \GeminiCommerce\Paymentprocessor\Model\PaymentprocessorVoidPaymentRequest
+$body = new \OpenAPI\Client\Model\PaymentprocessorVoidPaymentRequest(); // \OpenAPI\Client\Model\PaymentprocessorVoidPaymentRequest
 
 try {
     $result = $apiInstance->voidPayment($body);
@@ -841,11 +841,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorVoidPaymentRequest**](../Model/PaymentprocessorVoidPaymentRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PaymentprocessorVoidPaymentRequest**](../Model/PaymentprocessorVoidPaymentRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorVoidPaymentResponse**](../Model/PaymentprocessorVoidPaymentResponse.md)
+[**\OpenAPI\Client\Model\PaymentprocessorVoidPaymentResponse**](../Model/PaymentprocessorVoidPaymentResponse.md)
 
 ### Authorization
 

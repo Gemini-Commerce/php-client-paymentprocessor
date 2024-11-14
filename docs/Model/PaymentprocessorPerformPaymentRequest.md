@@ -1,19 +1,20 @@
 # # PaymentprocessorPerformPaymentRequest
 
 
-## Properties
+## Properties 
 
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **tenant_id**| **string** |   |
 **payment_id**| **string** |   |
-**context**| [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorPaymentContext**](PaymentprocessorPaymentContext.md) |   | [optional]
+**context**| [**\OpenAPI\Client\Model\PaymentprocessorPaymentContext**](PaymentprocessorPaymentContext.md) |   | [optional]
 **code**| **string** | payment type stripe, paypal..  |
-**amount**| [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
-**currency**| [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorCurrency**](PaymentprocessorCurrency.md) |  for more information please, see Model/PaymentprocessorCurrency.php  | [optional]
+**amount**| [**\OpenAPI\Client\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
+**currency**| [**\OpenAPI\Client\Model\PaymentprocessorCurrency**](PaymentprocessorCurrency.md) |  for more information please, see Model/PaymentprocessorCurrency.php  | [optional]
 **additional_info**| **string** |   | [optional]
-**transactions**| [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorTransaction[]**](PaymentprocessorTransaction.md) |   | [optional]
+**transactions**| [**\OpenAPI\Client\Model\PaymentprocessorTransaction[]**](PaymentprocessorTransaction.md) |   | [optional]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
+

@@ -1,7 +1,7 @@
 # # PaymentprocessorItem
 
 
-## Properties
+## Properties 
 
 
 Name | Type | Description | Notes
@@ -10,15 +10,15 @@ Name | Type | Description | Notes
 **product_grn**| **string** |   | [optional]
 **qty_ordered**| **int** |   | [optional]
 **qty_committed**| **int** |   | [optional]
-**unit_sale_price**| [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
-**unit_list_price**| [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
-**unit_base_price**| [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
-**unit_vat_amount**| [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
-**row_sale_price**| [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
-**row_list_price**| [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
-**row_vat_amount**| [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
-**discount_amount**| [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
-**row_base_price**| [**\GeminiCommerce\Paymentprocessor\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
+**unit_sale_price**| [**\OpenAPI\Client\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
+**unit_list_price**| [**\OpenAPI\Client\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
+**unit_base_price**| [**\OpenAPI\Client\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
+**unit_vat_amount**| [**\OpenAPI\Client\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
+**row_sale_price**| [**\OpenAPI\Client\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
+**row_list_price**| [**\OpenAPI\Client\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
+**row_vat_amount**| [**\OpenAPI\Client\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
+**discount_amount**| [**\OpenAPI\Client\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
+**row_base_price**| [**\OpenAPI\Client\Model\PaymentprocessorMoney**](PaymentprocessorMoney.md) |   | [optional]
 **vat_percentage**| **float** |   | [optional]
 **vat_inaccurate**| **bool** |   | [optional]
 **vat_calculated**| **bool** |   | [optional]
@@ -34,3 +34,4 @@ Name | Type | Description | Notes
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
+
